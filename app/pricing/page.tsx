@@ -23,7 +23,7 @@ export default function DocumentingPage() {
             Property Documenting
           </h1>
           <p className="mt-3 text-muted-foreground">
-            Onboard, seal, and transfer land documents. Every property gets a permanent digital record with blockchain-verified Custodium seals.
+            Onboard, seal, and transfer land documents. Every property gets a permanent digital record with secure verification.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function DocumentingPage() {
               title: 'Private Onboarding + Custodium Seal',
               price: `${formatNaira(10000)} - ${formatNaira(50000)}`,
               note: 'Geo-tier pricing (Urban N50k, City N25k, Rural N10k). One-time payment. Bankable.',
-              features: ['Tier 3: N10k (Rural)', 'Tier 2: N25k (City)', 'Tier 1: N50k (Urban)', 'Includes Custodium blockchain seal'],
+              features: ['Tier 3: N10k (Rural)', 'Tier 2: N25k (City)', 'Tier 1: N50k (Urban)', 'Includes secure digital seal'],
               color: 'text-secondary',
               bg: 'bg-secondary/10',
               featured: true,

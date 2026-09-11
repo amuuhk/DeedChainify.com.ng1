@@ -56,8 +56,6 @@ export type Property = {
   status: string;
   is_pledged: boolean;
   bank_name: string | null;
-  blockchain_hash: string | null;
-  ipfs_url: string | null;
   public_qr_url: string | null;
   private_qr_token: string | null;
   landlord_id: string | null;
@@ -137,24 +135,22 @@ export type Transfer = {
   witness2_status: string;
   witness3_status: string;
   chief_status: string;
-  pdf_hash: string | null;
-  ledger_id: string | null;
-  signature: string | null;
   created_by: string | null;
   created_at: string;
 };
 
-export type PrivateLedger = {
-  id: string;
-  transfer_id: string | null;
-  dc_title: string;
-  pdf_hash: string;
-  previous_hash: string | null;
-  signature: string;
-  nonce: string;
-  status: string;
-  timestamp: string;
-};
+// BLOCKCHAIN SYSTEM REMOVED - PrivateLedger type no longer needed
+// export type PrivateLedger = {
+//   id: string;
+//   transfer_id: string | null;
+//   dc_title: string;
+//   pdf_hash: string;
+//   previous_hash: string | null;
+//   signature: string;
+//   nonce: string;
+//   status: string;
+//   timestamp: string;
+// };
 
 export type PropertyOwner = {
   id: string;

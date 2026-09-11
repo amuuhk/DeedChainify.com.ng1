@@ -62,8 +62,6 @@ Property structure:
   status: string;
   is_pledged: boolean;
   bank_name: string | null;
-  blockchain_hash: string | null;
-  ipfs_url: string | null;
   public_qr_url: string | null;
   private_qr_token: string | null;
   landlord_id: string | null;

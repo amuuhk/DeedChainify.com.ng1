@@ -29,7 +29,7 @@ a DC_TITLE. Public QR scans and private onboarding generate revenue.
    - status (default PENDING) — PENDING | YELLOW | GREEN | DISPUTED
    - is_pledged (bool default false)
    - bank_name (text)
-   - blockchain_hash, ipfs_url, public_qr_url (text)
+   - public_qr_url (text)
    - private_qr_token (text unique)
    - landlord_id, barrister_id (text)
    - listing_type (text) — PRIVATE | PUBLIC
@@ -138,8 +138,6 @@ CREATE TABLE IF NOT EXISTS properties (
   status text NOT NULL DEFAULT 'PENDING',
   is_pledged boolean NOT NULL DEFAULT false,
   bank_name text,
-  blockchain_hash text,
-  ipfs_url text,
   public_qr_url text,
   private_qr_token text UNIQUE,
   landlord_id text,
