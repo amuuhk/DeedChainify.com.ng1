@@ -55,4 +55,4 @@ temp/
 .supabase/
 
 # Netlify
-.netlify/
+.netlify/node_modules/
