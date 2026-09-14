@@ -8,9 +8,19 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { ShieldCheck, AlertTriangle, Loader2, ArrowLeft, Fingerprint, FileCheck, Link2, Clock } from 'lucide-react';
 import { supabase } from '@/lib/supabase/client';
-import type { PrivateLedger } from '@/lib/supabase/client';
 import { SiteHeader } from '@/components/site-header';
 import { SiteFooter } from '@/components/site-footer';
+
+// Explicit type definition resolving the module resolution failure
+export type PrivateLedger = {
+  id: string;
+  dc_title: string;
+  transfer_id: string;
+  pdf_hash: string;
+  timestamp: string | number | Date;
+  signature: string;
+  previous_hash: string;
+};
 
 export default function CustodiumVerifyPage() {
   const params = useParams();

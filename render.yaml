@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: deedchainify
+    env: node
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false
+      - key: NEXT_PUBLIC_SITE_URL
+        value: https://deedchainify.onrender.com
+      - key: NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY
+        sync: false
+      - key: PAYSTACK_SECRET_KEY
+        sync: false
+      - key: NEXT_PUBLIC_TERMII_API_KEY
+        sync: false
+      - key: TERMII_SENDER_KEY
+        value: DeedChain
+      - key: NEXT_PUBLIC_YOUVERIFY_PUBLIC_KEY
+        sync: false
+      - key: YOUVERIFY_SECRET_KEY
+        sync: false
