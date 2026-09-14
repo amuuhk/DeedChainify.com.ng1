@@ -1,4 +1,5 @@
 'use client';
+export const dynamic = 'force-dynamic'; // ADD THIS LINE
 
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -139,7 +140,7 @@ export default function ChiefDashboard() {
           </div>
 
           {/* Stats */}
-          <div className="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+          <div className="mt-6 grid-cols-2 gap-4 md:grid-cols-4">
             {[
               { label: 'Pending Approvals', value: pendingTransfers.length, icon: Clock, color: 'text-yellow-600' },
               { label: 'Approved', value: approvedTransfers.length, icon: CheckCircle, color: 'text-green-600' },
@@ -244,7 +245,7 @@ export default function ChiefDashboard() {
                             </div>
                             <Badge variant="secondary" className="border-yellow-300 text-yellow-700">PENDING</Badge>
                           </div>
-                          <div className="mt-3 flex flex-wrap gap-2">
+                          <div className="mt-3 flex-wrap gap-2">
                             {t.witness1_phone && (
                               <Badge variant="outline" className={t.witness1_status === 'APPROVED' ? 'border-green-300 text-green-700' : ''}>
                                 W1: {t.witness1_status}
